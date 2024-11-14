@@ -1,0 +1,59 @@
+@import "../css/global.css";
+@import "../css/header.css";
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), var(--indonesia-bg);
+    background-size: cover;
+    background-position: center; 
+    height: 100vh; 
+    overflow: hidden;            
+}
+
+.escultura{
+    display: flex;
+    align-items: center;
+}
+
+.escultura h3{
+    margin-left:6rem;
+    max-width: 20rem;
+}
+
+.escultura p{
+    margin-left: 8rem;
+    margin-top: 1rem;
+    max-width: 12rem;
+}
+.escultura img {
+    margin-left: 6rem;
+    max-width: 13.7rem;
+    height: 18.3rem;
+   
+}
+
+.vestimenta{
+    display: flex;
+    align-items: center;
+}
+
+.vestimenta h3 {
+    margin-left:9rem;
+    margin-top: 9rem;
+}
+
+.vestimenta p{
+    margin-left:7rem;
+    margin-top: 1rem;
+    max-width: 13rem;
+    height: 16rem;
+}
+.vestimenta img {
+    margin-left: 32rem;
+    margin-top: 8rem;
+    max-width: 13.7rem;
+    height: 18.3rem;
+   
+}
+
+
+
+
