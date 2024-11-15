@@ -3,7 +3,7 @@
 body{
     background: var(--indonesia-bg);
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     height: 100vh; 
     overflow: hidden;             
 }
