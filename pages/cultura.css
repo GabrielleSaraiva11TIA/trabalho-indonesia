@@ -1,58 +1,177 @@
 @import "../css/global.css";
 @import "../css/header.css";
-body{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), var(--indonesia-bg);
+
+body {
+    background-image: var(--indonesia-bg);
     background-size: cover;
-    background-position: center; 
-    height: 100vh; 
-    overflow: hidden;            
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
 }
 
-.escultura{
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1; 
+}
+
+.primeira, .segunda, h1 {
+    font-family: 'poppins';
+    color: #fff;
+    position: relative; 
+    z-index: 1;
+}
+
+
+.primeira, .segunda, h1{
+    font-family: 'poppins';
+    color: #fff;
+}
+
+.primeira {
     display: flex;
-    align-items: center;
 }
 
-.escultura h3{
-    margin-left:6rem;
-    max-width: 20rem;
+.texto1{
+    margin-top: 5rem;
+    display: block;
+    text-align: center;
 }
 
-.escultura p{
-    margin-left: 8rem;
-    margin-top: 1rem;
-    max-width: 12rem;
-}
-.escultura img {
-    margin-left: 6rem;
-    max-width: 13.7rem;
-    height: 18.3rem;
-   
-}
-
-.vestimenta{
+.esquerdo1{
     display: flex;
+    align-items: flex-start; 
+    gap: 10px;
+}
+
+.esquerdo1 img{
+     width: 15rem;
+     border-radius: 10%;
+     margin-top: 4rem;
+     margin-left: 10rem;
+     margin-right: 2rem;
+     height: 20.5rem;
+}
+
+.esquerdo1 p{
+    margin-top: 3rem;
+    max-width: 30rem;
+}
+
+.esquerdo1 h3{
+    font-weight: bold;
+}
+
+.texto2{
+    text-align: center;
+    margin-top: 5rem;
+    display: block;
+    margin-left: 53rem;
+}
+
+.direito1 {
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: flex-start;
+}
+
+.direito1 img {
+    width: 15rem;
+    height: 20.5rem;
+    border-radius: 10%;
+    margin-top: 4rem;
+    margin-right: 9rem;
+    margin-left: 2rem;
+}
+
+.direito1 p {
+    margin-top: 3rem;
+    max-width: 30rem;
+}
+
+.direito1 h3 {
+    font-weight: bold;
+}
+
+
+.segunda {
+    display: flex;
+}
+
+.texto3{
+    margin-top: 5rem;
+    display: block;
+    text-align: center;
+}
+
+.esquerdo2{
+    display: flex;
+    align-items: flex-start; 
+    gap: 10px;
+}
+
+.esquerdo2 img{
+     width: 15rem;
+     border-radius: 10%;
+     margin-top: 4rem;
+     margin-left: 10rem;
+     margin-right: 2rem;
+     height: 20.5rem;
+}
+
+.esquerdo2 p{
+    margin-top: 3rem;
+    max-width: 32rem;
+}
+
+.esquerdo2 h3{
+    font-weight: bold;
+}
+
+.texto4{
+    text-align: center;
+    margin-top: 5rem;
+    display: block;
+    margin-left: 49rem;
+}
+
+.direito2{
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: flex-start;
+}
+
+.direito2 img {
+    width: 15rem;
+    height: 20.5rem;
+    border-radius: 10%;
+    margin-top: 4rem;
+    margin-right: 9rem;
+    margin-left: 2rem;
+}
+
+.direito2 p {
+    margin-top: 3rem;
+    max-width: 32rem;
+}
+
+.direito2 h3 {
+    font-weight: bold;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
     align-items: center;
+    font-size: 5rem;
 }
 
-.vestimenta h3 {
-    margin-left:9rem;
-    margin-top: 9rem;
-}
-
-.vestimenta p{
-    margin-left:7rem;
-    margin-top: 1rem;
-    max-width: 13rem;
-    height: 16rem;
-}
-.vestimenta img {
-    margin-left: 32rem;
-    margin-top: 8rem;
-    max-width: 13.7rem;
-    height: 18.3rem;
-   
-}
 
 
 
